@@ -1,0 +1,88 @@
+﻿@model HomeViewModel
+
+    <section id="banner" class="w-100 d-flex align-items-center " style=" background-image: url(/images/workspace-main.jpg)">
+        <div class="container-fluid">
+
+            <div class="text-center text-white">
+                <div class="mb-4">
+                    <img src="~/images/logo-big-NEW.png" alt="logo">
+                </div>
+                <h1>Senkadagala</h1>
+                <p class="mt-2">A simple one page HTML layout.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="mini">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <img src="~/images/big-mac.jpg" alt="mac">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-center pb-3">What is Senkadagala?</h2>
+                        <div class="ps-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-item">
+                            <img src="~/images/user1.png" alt="user1">
+                            <h4>Member One</h4>
+                            <h5 class="pb-3">Awesome Designation</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis vitae. Integer sodales varius odio, vel pharetra ante rhoncus vel. Phasellus quis urna rutrum, molestie purus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-item">
+                            <img src="~/images/user2.png" alt="user2">
+                            <h4>Member One</h4>
+                            <h5 class="pb-3">Awesome Designation</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis vitae. Integer sodales varius odio, vel pharetra ante rhoncus vel. Phasellus quis urna rutrum, molestie purus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-item">
+                            <img src="~/images/user3.png" alt="user3">
+                            <h4>Member One</h4>
+                            <h5 class="pb-3">Awesome Designation</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis vitae. Integer sodales varius odio, vel pharetra ante rhoncus vel. Phasellus quis urna rutrum, molestie purus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="text-center d-flex  align-items-center" style="background-image: url(/images/workspace-sub.jpg);">
+        <div class="container">
+            <div class="row">
+                @foreach (Service item in Model.services)
+                {
+                    <div class="col-lg-3">
+                        <div class="service-item">
+                            <div>
+                                <img src="~/images/@item.Image" alt="design service">
+                            </div>
+                            <h4>@item.Title</h4>
+                            <p>@item.Subtitle</p>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </section>

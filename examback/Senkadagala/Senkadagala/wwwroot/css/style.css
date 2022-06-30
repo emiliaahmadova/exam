@@ -1,0 +1,93 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 50px;
+}
+#banner {
+   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+}
+#banner p {
+    font-size: 20px;
+}
+
+ p {
+    font-size: 15px;
+}
+#navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 5px 2px -2px rgba(0,0,0,.2);
+}
+#about {
+    padding-block: 100px;
+}
+#about p {
+    color: rgb(138, 138, 138);
+    font-size: 18px;
+}
+
+.mini {
+    padding-inline: 20px;
+}
+
+#team {
+    padding-block: 100px;
+}
+#team h4 {
+    color: gray;
+    font-weight: bold;
+}
+#team h5 , #team p {
+    color: rgb(138, 138, 138);
+}
+
+
+#services {
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.service-item {
+    padding-inline: 10px;
+}
+#services p {
+    color: rgb(138, 138, 138);
+    font-size: 18px;
+}
+
+#services h4 {
+    color: rgb(107, 107, 107);
+    padding-block: 10px;
+}
+
+#contact .text {
+    padding-inline: 70px;
+}
+#contact h2 {
+    font-size: 40px;
+    color: rgb(175, 175, 175);
+}
+#contact {
+   height: 100vh;
+    background-color: black;
+}
+#contact p {
+    font-size: 18px;
+}
+.contact p{
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    color: rgb(170, 5, 170);
+}
